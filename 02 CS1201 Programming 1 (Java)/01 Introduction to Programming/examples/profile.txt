@@ -1,0 +1,4 @@
+Name:            Mi
+Email:           hami.ftu2@gmail.com
+Favorite Color:  Green
+Yearly Income:   $1,000.00

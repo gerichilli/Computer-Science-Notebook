@@ -1,7 +1,9 @@
 discuss.*
 learning-journal.*
 programming-assignment.*
-discuss/*
-learning-journal/*
-programming-assignment/*
-Textbooks/*
+*.pdf
+
+discuss/
+learning-journal/
+programming-assignment/
+Textbooks/
