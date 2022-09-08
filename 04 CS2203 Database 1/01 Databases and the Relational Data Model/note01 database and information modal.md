@@ -23,6 +23,8 @@
   - tools for data backup, data restore and recovery
   - handle other challenges: capability to work with huge volumes of data and users
 
+![Database management system used by different departments in a bank](./images/database-systems.svg)
+
 ### The evolution of database management systems
 
 - 1960s, physical and logical manipulation od data are mixed
