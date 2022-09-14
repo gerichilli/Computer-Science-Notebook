@@ -1,8 +1,8 @@
-> Since I found Javanotes confusing and unnecessarily lengthy for a beginner with Java, I learned Java with Head First Java instead of Javanotes
+> Since I found Javanotes confusing and unnecessarily lengthy for a beginner with Java, I learned some chapters with Head First Java instead
 
 ## Unit 1: Introduction to Programming
 
-- Chapter 1
+- Chapter 1 (Javanotes + Youtube)
 - Chapter 2
 
 ## Unit 2: Control Structures
