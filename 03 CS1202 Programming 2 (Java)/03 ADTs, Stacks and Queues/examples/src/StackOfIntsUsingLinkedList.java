@@ -1,4 +1,4 @@
-public class StackOfInts {
+public class StackOfIntsUsingLinkedList {
     private static class Node {
         int item;
         Node next;
@@ -23,7 +23,7 @@ public class StackOfInts {
      */
     public int pop() {
         if(top == null) {
-            throw new IllegalStateException("Can not delete item from an empty Stack");
+            throw new IllegalStateException("Can not pop item from an empty Stack");
         }
         int topItem = top.item; // Save the item of top Node
         top = top.next; // The top is removed -> the next Node become the top of the stack

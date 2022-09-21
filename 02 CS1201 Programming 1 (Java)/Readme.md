@@ -2,8 +2,8 @@
 
 ## Unit 1: Introduction to Programming
 
-- Chapter 1 (Javanotes + Youtube) Done
-- Chapter 2
+- Chapter 1 (Javanotes + Youtube) ✔
+- Chapter 2 (Head First Java C1)
 
 ## Unit 2: Control Structures
 
