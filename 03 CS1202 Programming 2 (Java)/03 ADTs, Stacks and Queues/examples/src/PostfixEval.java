@@ -10,7 +10,7 @@ import textio.TextIO;
  *
  * A stack is used to evaluate the expression.  The stack is represented
  * by an object of type StackOfDouble.  This program depends on the non-standard
- * classes StackOfDouble and TextIO.
+ * classes StackOfDouble and textio.TextIO.
  *
  * For demonstration purposes, the stack operations are reported as
  * they are performed.

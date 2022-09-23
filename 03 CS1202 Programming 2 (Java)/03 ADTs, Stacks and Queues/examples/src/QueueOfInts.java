@@ -4,8 +4,8 @@ public class QueueOfInts {
         Node next;
     }
 
-    private Node head = null;
-    private Node tail = null;
+    private static Node head = null;
+    private static Node tail = null;
 
     public void enqueue(int N) {
         Node newItem = new Node();

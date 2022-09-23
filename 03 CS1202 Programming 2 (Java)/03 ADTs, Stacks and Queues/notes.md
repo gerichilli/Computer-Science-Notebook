@@ -39,3 +39,53 @@
 - Postfix expression:
   - an operator comes after its operands
   - postfix expressions don't require parentheses or precedence rules
+
+## Binary Trees
+
+```
+class TreeNode {
+  int item; // The data in this node
+  TreeNode left; // Pointer to the left subtree
+  TreeNode right; // Pointer to the right subtree
+}
+```
+
+- **parent**: the node that points to another => parent of that node
+- **child**: the node the parent node points to
+- **leaf**: the node that has no children
+- A binary tree must have the following properties
+  - **root**: There is exactly one node in the tree which has no parent
+  - Every other node in the tree has exactly 1 parent
+  - there can be no loops in a binary tree
+
+### Tree Traversal
+
+- [Example](./examples/src/BinaryTree.java)
+
+#### Preorder Traversal
+
+1. The root
+2. Left subtree
+3. Right subtree
+
+#### Postorder Traversal
+
+1. The left subtree
+2. The right subtree
+3. The root
+
+#### Inorder Traversal
+
+1. The left subtree
+2. The root
+3. The right subtree
+
+### Binary Sort Trees
+
+- A binary tree can be used to store an ordered list in a way that makes both searching and insertion efficient
+- A binary sort tree is a binary tree with the following property
+  - For every node in the tree, the item in that node is >= to every item in the left subtree of that node
+  - and it is <= to all the items in the right subtree of that node
+- An inorder traversal of the tree will process the items in increasing order
+- Searching and inserting are efficient operations on a binary search tree, provided that the tree is close to being balanced
+  - **balanced binary tree**: if for each node, the left subtree of that node contains approximately the same number of nodes as the right subtree

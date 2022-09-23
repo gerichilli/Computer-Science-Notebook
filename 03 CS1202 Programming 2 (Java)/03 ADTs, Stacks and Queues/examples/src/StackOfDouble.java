@@ -16,7 +16,7 @@ public class StackOfDouble {
     }
 
 
-    private Node top;  // Pointer to the Node that is at the top of the stack.
+    private static Node top;  // Pointer to the Node that is at the top of the stack.
     //    If top == null, then the stack is empty.
 
     /**
