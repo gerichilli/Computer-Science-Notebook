@@ -31,4 +31,4 @@
 
 ## Arrays
 
-- Arrays are objects toos
+- Arrays are objects too

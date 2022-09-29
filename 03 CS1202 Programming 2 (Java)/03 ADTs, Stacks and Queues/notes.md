@@ -42,7 +42,7 @@
 
 ## Binary Trees
 
-```
+```java
 class TreeNode {
   int item; // The data in this node
   TreeNode left; // Pointer to the left subtree

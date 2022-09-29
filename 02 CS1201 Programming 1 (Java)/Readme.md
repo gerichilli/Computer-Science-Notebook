@@ -3,7 +3,7 @@
 ## Unit 1: Introduction to Programming
 
 - Chapter 1 (Javanotes + Youtube) ✔
-- Chapter 2 (Head First Java C1)
+- Chapter 2 (Head First Java C1, C2, C3) ✔
 
 ## Unit 2: Control Structures
 
@@ -23,7 +23,7 @@
 
 ## Unit 4: Objects and Classes
 
-- 5.1 - 5.4
+- 5.1 - 5.4 (Head First Java C3)
 
 ## Unit 5: Inheritance, Polymorphism, and Interfaces
 

@@ -42,7 +42,7 @@
 - The term node is often used to refer to one of the objects in a linked data structure
 - Each node holds a String and a pointer to the next node in the list
 
-```
+```java
 class Node {
    String item;
    Node next;
