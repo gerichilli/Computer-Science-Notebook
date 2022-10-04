@@ -7,8 +7,18 @@ public class IteratorExample {
         ArrayList<String> coll = new ArrayList<>(); // Collection of Type String
         Iterator<String> iter; // Declare the iterator variable
         iter = coll.iterator(); // Get an iterator for the collection
+        /*
+            iter.hasNext()
+            Returns a boolean value, true there are more items to be processed
+         */
         while (iter.hasNext()) {
-            String item = iter.next(); // Get the next item
+            /*
+                iter.next()
+                Returns the next item, and advances the iterator
+                If this method is called when no items remain,
+                it will throw a `NoSuchElementException`.
+             */
+            String item = iter.next();
             System.out.println(item);
         }
 
@@ -19,7 +29,10 @@ public class IteratorExample {
 
             // Remove null values
             if(colorItem == null) {
-                iterColor.remove(); // Remove the item that was just returned from iterColor.next()
+                /*
+                    Remove the item that was just returned from iterColor.next()
+                 */
+                iterColor.remove();
             }
         }
 
