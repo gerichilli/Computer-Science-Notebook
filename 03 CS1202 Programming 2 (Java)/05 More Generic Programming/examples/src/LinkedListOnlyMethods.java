@@ -29,7 +29,7 @@ public class LinkedListOnlyMethods {
          */
         myLinkedList.removeFirst();
         myLinkedList.remove(); // same meaning
-        myLinkedList.pop(); // same meaning with
+        myLinkedList.pop(); // same meaning
 
         /*
             removes the last item from the list

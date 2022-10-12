@@ -2,7 +2,7 @@ import java.util.Iterator;
 import java.util.Set;
 import java.util.TreeMap;
 
-public class MapIterator {
+public class MapView {
     public static void main(String[] args) {
         TreeMap<String, Double> map = new TreeMap<>();
 
