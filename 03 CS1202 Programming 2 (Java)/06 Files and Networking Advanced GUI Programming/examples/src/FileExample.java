@@ -1,67 +1,56 @@
-
-/**
- * Make a list of some nice names from file
- * OUTPUT
- * Enter genre (girl or boy):
- * girl
- * Asher
- * Aurora
- * Ava
- * Chloe
- * Grayson
- * Logan
- * Luna
- * Michael
- * Olivia
- * Sophia
- */
-
 import javax.swing.*;
 import java.io.*;
-import java.util.Scanner;
 import java.util.TreeSet;
 
-public class FileExamples {
+/*
+Make a list of some nice names from file
+OUTPUT
+Asher
+Aurora
+Ava
+Chloe
+Grayson
+Logan
+Luna
+Michael
+Olivia
+Sophia
+Writing to C:\Users\Admin\Documents\test.txt
+ */
 
+public class FileExample {
     public static void main(String[] args) {
-        try (Scanner sc = new Scanner(System.in)) {
-            System.out.println("Enter genre (girl or boy): ");
-            String genre = sc.nextLine();
+        TreeSet<String> names = getNamesFromFile();
 
-            TreeSet<String> names = getNamesFromFile(genre);
-
-            // Print all recommendation
-            for (String name : names) {
-                System.out.println(name);
-            }
-
-            saveOutputFile(names);
+        // Print all recommendation
+        for (String name : names) {
+            System.out.println(name);
         }
-    }
 
-    static File getInputFileNameFromUser() {
-        JFileChooser fileDialog = new JFileChooser();
-        // Set some initial value for dialog
-        fileDialog.setDialogTitle("Select file to save");
-        int option = fileDialog.showSaveDialog(null);
-        if (option != JFileChooser.APPROVE_OPTION)
-            return null;
-        else
-            return fileDialog.getSelectedFile();
+        saveOutputFile(names);
     }
 
     /**
      * Print an output file with names containing "a" character
-     * 
-     * @param names
+     * @param names TreeSet of nice names
      */
     static void saveOutputFile(TreeSet<String> names) {
-        File data = getInputFileNameFromUser();
+        File data;
         PrintWriter result;
 
         try {
-            if (data == null) {
+            JFileChooser fileDialog = new JFileChooser();
+            // Set some initial value for dialog
+            fileDialog.setDialogTitle("Select file to save");
+            int option = fileDialog.showSaveDialog(null);
+
+            if (option != JFileChooser.APPROVE_OPTION) {
+                System.out.println("Created result.txt");
                 data = new File("result.txt");
+                System.out.println("Writing to result.txt");
+            } else {
+                data = fileDialog.getSelectedFile();
+                System.out.print("Writing to " + data.getAbsolutePath());
             }
 
             result = new PrintWriter(data);
@@ -79,20 +68,16 @@ public class FileExamples {
     }
 
     /**
-     * Get names by genre
-     * @param genre
+     * Get nice names
      * @return TreeSet of names
      */
-    static TreeSet<String> getNamesFromFile(String genre) {
+    static TreeSet<String> getNamesFromFile() {
         TreeSet<String> nameCollection = new TreeSet<>();
 
         BufferedReader in;
 
         try {
-            if (genre.equals("girl"))
-                in = new BufferedReader(new FileReader("girl_names.txt"));
-            else
-                in = new BufferedReader(new FileReader("boy_names.txt"));
+            in = new BufferedReader(new FileReader("names.txt"));
 
             String line = in.readLine();
             // Add words to TreeSet
