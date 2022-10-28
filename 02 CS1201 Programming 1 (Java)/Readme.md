@@ -2,7 +2,7 @@
 
 # Programming Fundamental 1 (With Java)
 
-## [Unit 1: Introduction to Programming](./01%20Introduction%20to%20Programming/) - [Notes](./01%20Introduction%20to%20Programming/notes.md)
+## [Unit 1: Introduction to Programming](./01%20Introduction%20to%20Programming/)
 
 - Chapter 1 = (Javanotes + Youtube) ✔
 - Chapter 2 = (Head First Java C1, C2, C3) ✔
@@ -17,7 +17,7 @@
 - Java Expressions
 - Writing a Java Program
 
-## [Unit 2: Control Structures](./02%20Control%20Structures/) - [Notes](./02%20Control%20Structures/notes.md)
+## [Unit 2: Control Structures](./02%20Control%20Structures/)
 
 - 3.1.2 (Javanotes) ✔
 - 3.2.2 (Javanotes) ✔
@@ -31,7 +31,7 @@
 - Branching Control Structures in Java: If and Switch Top-Down
 - Design of Algorithms Debugging
 
-## [Unit 3: Static Methods and Member Variables](./03%20Static%20Methods%20and%20Member%20Variables/) - [Notes](./03%20Static%20Methods%20and%20Member%20Variables/notes.md)
+## [Unit 3: Static Methods and Member Variables](./03%20Static%20Methods%20and%20Member%20Variables/)
 
 - 4.2
 - 4.3.1 - 4.3.4
@@ -62,7 +62,7 @@
 - 3.9
 - 6.1 - 6.7
 
-## [Unit 7: Arrays and ArrayLists](./07%20Arrays%20and%20ArrayLists/) - [Notes](./07%20Arrays%20and%20ArrayLists/notes.md)
+## [Unit 7: Arrays and ArrayLists](./07%20Arrays%20and%20ArrayLists/)
 
 - 3.8
 - Chapter 7
