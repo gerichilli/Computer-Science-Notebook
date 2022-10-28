@@ -7,11 +7,11 @@
 
 ## Unit 2: Control Structures
 
-- 3.1.2
-- 3.2.2
-- 3.4.3
-- 3.5.3
-- 3.6.2
+- 3.1.2 (Javanotes) ✔
+- 3.2.2 (Javanotes) ✔
+- 3.4.3 (Javanotes) ✔
+- 3.5.3 (Javanotes) ✔
+- 3.6.2 (Javanotes) ✔
 
 ## Unit 3: Static Methods and Member Variables
 

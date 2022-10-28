@@ -1,5 +1,11 @@
 # Files and Networking; Advanced GUI Programming
 
+## Learning Objectives:
+
+- Understand files: writing and reading
+- Learn the basics of networking.
+- Study more GUI programming topics, including images and resources, text, transparency, anti-aliasing, actions, and buttons.
+
 ## File
 
 ### Reading and Writing Files
