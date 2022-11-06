@@ -7,6 +7,6 @@
   - Things the object does: methods => present behavior of object
 - Think of instance as another way of saying object: objects have instance variables and methods, but those instance variables and methods are designed as part of the class.
 
-## Differnce between a class and an object
+## Difference between a class and an object
 
 - A class is not an object (but it’s used to construct them)
