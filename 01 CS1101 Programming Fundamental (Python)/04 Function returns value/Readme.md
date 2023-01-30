@@ -7,9 +7,11 @@
   - no return value = return value is None
 
 - Fruitful function
+  ```python
   def area(radius):
-  a = math.pi \* radius\*\*2
-  return a
+    a = math.pi \* radius\*\*2
+    return a
+  ```
   - Return immediately from this function
   - Use a as return value
   - As soon as return statement runs => function terminates, the other place can never reach => dead code
