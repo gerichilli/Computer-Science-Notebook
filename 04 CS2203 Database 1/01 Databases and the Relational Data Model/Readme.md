@@ -1,8 +1,134 @@
+# Database and information models
+
+## What is a database
+
+- a repository of data
+- designed to support efficient data storage, retrieval and maintenance
+- Data can be stored in various forms
+  - tabular (bảng): relational database
+  - hierarchical (thứ bậc) (tree structure): hierarchical database
+  - graphs: network database
+
+## What is database management system(DBMS)
+
+- A set of software tools that control
+  - Access
+  - organize
+  - store
+  - manage
+  - retrieve
+  - maintain data
+- Why do we need DBMS
+  - provide the ability to have mutiple users insert, update and delete data at the same data file without _stepping on each other's toe_
+  - a standard interface for data access
+  - tools for data backup, data restore and recovery
+  - handle other challenges: capability to work with huge volumes of data and users
+
+![Database management system used by different departments in a bank](./images/database-systems.svg)
+
+### The evolution of database management systems
+
+- 1960s, physical and logical manipulation od data are mixed
+- 1970, E.F. Codd (of IBM) separated the physical and logical representation
+- Database Partitioning Feature (DPF): allows a database to be spread across many machines
+- Structured Query Language (SQL)
+- XML
+- Cloud Computing
+
+## Introduction to information models and data models
+
+- Modeling is important
+  - for future changes
+  - future extensions
+
+### Information models
+
+- an abstract, formal representation of entities that includes their properties, relationships, opetations that can be performed on them
+- describe the structure and meaning of data
+
+#### The differents between information models and data models
+
+![Information models and data models](./images/information-models-and-data-models.png)
+
+| Information models                            | Data Models                          |
+| --------------------------------------------- | ------------------------------------ |
+| Conceptual (khái niệm)                        | Concrete (cụ thể)                    |
+| Abstract modal for designers and operators    | Include many details                 |
+| For its designer                              | For software developers              |
+| hide all protocol and implementation details  | include protocol specific constructs |
+| defines relationships between managed objects | A blueprint of any database system   |
+
+## Types of information models
+
+### 1. Network model
+
+![A network model](./images/a-network-model.png)
+
+### 2. Hierarchical model (thứ bậc)
+
+![A hierarchical modal](./images/a-hierachical-modal.png)
+
+- organizes its data using tree structures
+- root of the tree is the parent followed by child nodes
+  - a child node cannot have more than 1 parent
+  - a parent can have many child nodes
+
+### 3. Relational model
+
+![A relational modal](./images/a-relational-model.png)
+
+- Store data in simple data structure
+- Access it throuh a high level set-at-a-time DML (Data Manipulation Language)
+- Be independent from physical storage
+
+### Entity Relationship model
+
+![A entity relationship model](./images/a-entity-relationship-model.png)
+
+- thinking of database as a collection of instances of entities
+- entities is like object and it has attributes (data elements that characterize the entity)
+
+### Object-relational model
+
+- Similar to relational model
+- however, it treats every entity as an object, and a relationship as an inheritance
+
+### Other data models
+
+- XML
+- ORM (object-relational mapping)
+
+## Roles and career path for database professionals
+
+### Data Architect (Data modeler)
+
+- Design an architecture that supports the organization's existing and future needs for data management
+- Focuses on the data strategy, considers the big picture of the organization's data needs and ensures that data is collected, stored, processed, and used in a way that supports the organization's goals and objectives
+
+### Database Architect
+
+- Similar to data architect
+- Database solution, focuses on the technical aspects of database design and implementation, such as selecting appropriate database technologies and determining the most efficient ways to store, index, and retrieve data
+
+### Database Administrator
+
+- Maintenance, performance, integrity (sự toàn vẹn) and security of a database
+
+### Application Developer
+
+- Developing applications that access databases
+
 # The relational data model
 
 ## Relational data model: The big picture
 
-- Communication tool between designers, programmers and end users of a database
+![Relational data model in context of information model](./images/relaational-sata-model.png)
+
+- Main aspects:
+  - concept
+  - constraints
+  - relational algebra
+  - relational calculus
 - Some new words
   - entity integrity: tính toàn vẹn của thực thể
   - referential integrity: tính toàn vẹn tham chiếu
@@ -26,7 +152,7 @@
 
 ### Domains
 
-- A set of atomic values (giá trị nguyên tử) that are all of the same type (attribute)
+- A set of atomic values = a pool of values (giá trị nguyên tử) that are all of the same type (attribute)
   - A value is the smallest unit of data in the relational model
   - Example: The domain for the `Producer` is the set of all possible car producer names (like BMW, Audi, VW...)
 
@@ -59,7 +185,7 @@
 
 ### Schemas
 
-- Formal descrition of all the database relations and all the relationships existing between them
+- Formal description of all the database relations and all the relationships existing between them
 
 ### Keys
 
@@ -89,7 +215,7 @@
 
 ## Relational data model constraints (Ràng buộc mô hình dữ liệu quan hệ)
 
-- Those rules are general ,specified at the database schema level, must be respected by each schema instance
+- Those rules are\*- general ,specified at the database schema level, must be respected by each schema instance
 
 ### Entity integrity constraint (Ràng buộc toàn vẹn thực thể)
 

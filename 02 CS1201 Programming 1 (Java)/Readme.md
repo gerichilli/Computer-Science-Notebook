@@ -46,8 +46,6 @@
 - Calling Static Methods
 - Using Static Member Variables
 
-### Topics
-
 ## Unit 4: Objects and Classes
 
 - 5.1 - 5.4 (Head First Java C3)
